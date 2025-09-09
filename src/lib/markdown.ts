@@ -3,15 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
-
-export type ContentItem = {
-  slug: string;
-  title: string;
-  date?: string;
-  category?: string;
-  description?: string;
-  contentHtml: string;
-};
+import { ContentItem } from "@/types";
 
 function getDirectoryFor(kind: "posts" | "reviews"): string {
   return path.join(process.cwd(), "content", kind);

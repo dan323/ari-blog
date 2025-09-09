@@ -3,8 +3,9 @@
 import { useState } from "react"
 ;import Link from "next/link";
 import styles from "./reviews.module.css";
+import { ContentItem } from "@/types";
 
-export default function ReviewsClient({ initialReviews }) {
+export default function ReviewsClient({ initialReviews }: { initialReviews: ContentItem[] }) {
   const [filter, setFilter] = useState("Todo");
 
   const filtered =
