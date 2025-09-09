@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build --turbopack && next export",
+    "build": "next build --turbopack",
     "start": "npx serve -s out",
+    "export": "next build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d out",
     "lint": "eslint"
