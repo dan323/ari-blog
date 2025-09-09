@@ -9,7 +9,7 @@ export async function generateStaticParams() {
 }
 
 export default async function ReviewPage({ params }: { params: { slug: string } }) {
-  const review = await getContentBySlug("reviews", params.slug);
+  const review = await getContentBySlug("reviews", (await params).slug);
   if (!review) return null;
   return (
     <main className={styles.main}>
