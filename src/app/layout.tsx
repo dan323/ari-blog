@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -40,6 +41,23 @@ export default function RootLayout({
         <div className="container">
           {children}
         </div>
+        <Script
+          id="ld-json"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Vicente Ariel Muñoz",
+              jobTitle: "Escritor y Músico",
+              url: "https://dan323.github.io/ari-blog",
+              sameAs: [
+                "https://www.instagram.com/munoz_ari24/",
+                "https://open.spotify.com/artist/01713LAVVVYlyiYBorCeZD",
+              ],
+            }),
+          }}
+        />
       </body>
     </html>
   );

@@ -23,6 +23,7 @@ jobs:
       - run: |
           echo "BASE_PATH=/ari-blog" >> $GITHUB_ENV
           npm run build
+          npx next-sitemap
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./out   # Next.js exportará aquí

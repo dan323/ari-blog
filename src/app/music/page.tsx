@@ -1,6 +1,27 @@
 import styles from "./music.module.css";
 
-export const metadata = { title: "Music" };
+export const metadata = {
+  title: "Mi música – Vicente Ariel Muñoz",
+  description: "Escucha mi música en Spotify y descubre mis discos y canciones.",
+  keywords: ["Vicente Ariel Muñoz música", "Spotify", "canciones", "álbum", "artista"],
+  metadataBase: new URL("https://dan323.github.io/ari-blog/"),
+  openGraph: {
+    title: "Mi música – Vicente Ariel Muñoz",
+    description: "Escucha mis canciones y mi último disco en Spotify.",
+    url: "https://dan323.github.io/ari-blog/music",
+    siteName: "Vicente Ariel Muñoz",
+    images: [
+      {
+        url: "/ari-blog/album-cover.jpg",
+        width: 800,
+        height: 800,
+        alt: "Portada del disco de Vicente Ariel Muñoz",
+      },
+    ],
+    type: "music.album",
+  },
+};
+
 
 export default function MusicPage() {
   return (

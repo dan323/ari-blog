@@ -2,7 +2,20 @@ import Link from "next/link";
 import { getAllContent } from "@/lib/markdown";
 import styles from "./posts.module.css";
 
-export const metadata = { title: "Blog" };
+export const metadata = {
+  title: "Blog – Vicente Ariel Muñoz",
+  description: "Artículos, reflexiones y novedades sobre mis proyectos creativos.",
+  keywords: ["Vicente Ariel Muñoz blog", "artículos", "literatura", "música", "Barcelona"],
+  metadataBase: new URL("https://dan323.github.io/ari-blog/"),
+  openGraph: {
+    title: "Blog – Vicente Ariel Muñoz",
+    description: "Reflexiones y noticias sobre mis proyectos creativos.",
+    url: "https://dan323.github.io/ari-blog/posts",
+    siteName: "Vicente Ariel Muñoz",
+    type: "article",
+  },
+};
+
 
 export default async function PostsIndex() {
   const posts = await getAllContent("posts");

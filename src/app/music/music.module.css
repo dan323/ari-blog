@@ -4,28 +4,34 @@
   padding: 1rem;
   font-family: system-ui, sans-serif;
   text-align: center;
+  background-color: #2b2b2b; /* gris oscuro de sección */
+  border-radius: 8px;
+  border: 1px solid #3a3a3a; /* borde sutil */
 }
 
 .title {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #1d4ed8;
+  color: #ffffff; /* blanco para encabezados */
 }
 
 .text {
   font-size: 1.1rem;
   margin-bottom: 2rem;
-  color: #374151;
+  color: #e0e0e0; /* gris claro para el texto */
 }
 
 .player {
   margin: 0 auto 2rem;
   max-width: 600px;
+  border-radius: 8px;
+  border: 1px solid #3a3a3a; /* sutil borde para el iframe */
+  overflow: hidden;
 }
 
 .linkButton {
   display: inline-block;
-  background-color: #3b82f6;
+  background-color: #c0392b; /* rojo oscuro */
   color: white;
   padding: 0.75rem 1.5rem;
   border-radius: 9999px;
@@ -35,5 +41,5 @@
 }
 
 .linkButton:hover {
-  background-color: #2563eb;
+  background-color: #a83229; /* rojo más oscuro al pasar */
 }

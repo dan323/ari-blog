@@ -2,6 +2,28 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
 
+export const metadata = {
+  title: "Vicente Ariel Muñoz – Escritor y Músico",
+  description: "Página oficial de Vicente Ariel Muñoz: descubre mi libro, mi música y mis proyectos creativos.",
+  keywords: ["Vicente Ariel Muñoz", "escritor", "músico", "libro", "Barcelona", "arte", "canciones"],
+  metadataBase: new URL("https://dan323.github.io/ari-blog/"),
+  openGraph: {
+    title: "Vicente Ariel Muñoz – Escritor y Músico",
+    description: "Descubre mi libro, mi música y mis proyectos creativos.",
+    url: "https://dan323.github.io/ari-blog",
+    siteName: "Vicente Ariel Muñoz",
+    images: [
+      {
+        url: "/ari-blog/_R9A7364-1.jpg",
+        width: 800,
+        height: 600,
+        alt: "Foto de Vicente Ariel Muñoz",
+      },
+    ],
+    type: "website",
+  }
+};
+
 export default function Home() {
   return (
     <main className={styles.main}>

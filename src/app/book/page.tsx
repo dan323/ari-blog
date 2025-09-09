@@ -1,7 +1,27 @@
 import styles from "./book.module.css";
 import Image from "next/image";
 
-export const metadata = { title: "Mi libro" };
+export const metadata = {
+  title: "Mi libro – Vicente Ariel Muñoz",
+  description: "Sinopsis, portada y opciones para comprar mi libro, con posibilidad de dedicatoria en Barcelona.",
+  keywords: ["Vicente Ariel Muñoz libro", "novela", "literatura", "Barcelona", "escritor"],
+  metadataBase: new URL("https://dan323.github.io/ari-blog/"),
+  openGraph: {
+    title: "Mi libro – Vicente Ariel Muñoz",
+    description: "Descubre la sinopsis y consigue mi libro dedicado.",
+    url: "https://dan323.github.io/ari-blog/book",
+    siteName: "Vicente Ariel Muñoz",
+    images: [
+      {
+        url: "/ari-blog/book-cover.jpg",
+        width: 600,
+        height: 900,
+        alt: "Portada del libro de Vicente Ariel Muñoz",
+      },
+    ],
+    type: "book",
+  },
+};
 
 export default function BookPage() {
   return (
@@ -32,7 +52,7 @@ su detonante?</p>
       <section className={styles.buyOnline}>
         <h2 className={styles.sectionTitle}>Cómpralo online</h2>
         <a
-          href="https://tu-enlace-de-compra.com"
+          href="https://amzn.eu/d/2gLSmUm"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.buyButton}
@@ -48,7 +68,7 @@ su detonante?</p>
           Si prefieres un ejemplar firmado con dedicatoria, puedes escribirme
           directamente y quedamos en persona.
         </p>
-        <a href="mailto:tuemail@example.com" className={styles.mailButton}>
+        <a href="mailto:vicemunoz1996@gmail.com" className={styles.mailButton}>
           Pedir por email
         </a>
       </section>

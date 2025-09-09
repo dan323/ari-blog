@@ -3,35 +3,40 @@
   margin: 2rem auto;
   padding: 1rem;
   font-family: system-ui, sans-serif;
+  background-color: #2b2b2b; /* gris oscuro */
+  border-radius: 8px;
+  border: 1px solid #3a3a3a;
 }
 
 .title {
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 0.5rem;
-  color: #3b82f6;
+  color: #ffffff; /* blanco */
 }
 
 .date {
   font-size: 0.9rem;
-  color: #6b7280;
+  color: #a0a0a0; /* gris claro */
   margin-bottom: 2rem;
 }
 
 .prose {
   line-height: 1.7;
   font-size: 1.1rem;
-  color: #1f2937;
+  color: #e0e0e0; /* gris claro para el texto */
 }
 
 .proseImage {
   max-width: 100%;
   border-radius: 0.5rem;
   margin: 1.5rem 0;
+  border: 1px solid #3a3a3a;
 }
 
 .proseTitle {
   font-size: 1.8rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
+  color: #ffffff; /* blanco */
 }
