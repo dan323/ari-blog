@@ -35,6 +35,7 @@ export async function getContentBySlug(
     date: data.date as string | undefined,
     description: data.description as string | undefined,
     category: data.category as string | undefined,
+    author: data.author as string | undefined,
     contentHtml,
   };
 }

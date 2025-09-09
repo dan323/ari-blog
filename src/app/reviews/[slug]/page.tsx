@@ -18,7 +18,7 @@ export default async function ReviewPage({ params }: { params: { slug: string } 
         <p className={styles.date}>{new Date(review.date).toLocaleDateString()}</p>
       )}
       {review.author && (
-        <p className={styles.author}>{review.author}</p>
+        <p className={styles.author}>Autor: {review.author}</p>
       )}
       <article
         className={styles.prose}
