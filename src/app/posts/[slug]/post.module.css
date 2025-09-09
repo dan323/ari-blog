@@ -5,14 +5,14 @@
     font-family: system-ui, sans-serif;
   }
   
-  h1 {
+  .title {
     font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 0.5rem;
     color: #3b82f6;
   }
   
-  p {
+  .date {
     font-size: 0.9rem;
     color: #6b7280;
     margin-bottom: 2rem;
@@ -24,15 +24,30 @@
     color: #1f2937;
   }
   
-  .prose img {
+  .proseImage {
     max-width: 100%;
     border-radius: 0.5rem;
     margin: 1.5rem 0;
   }
   
-  .prose h2 {
+  .proseH2 {
     font-size: 1.8rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
+  }
+  
+  .proseH3 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .proseList {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .proseListItem {
+    margin-bottom: 0.5rem;
   }
   

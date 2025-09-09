@@ -1,4 +1,3 @@
-
 import { getAllContent, getContentBySlug } from "@/lib/markdown";
 import styles from "./review.module.css";
 
@@ -14,11 +13,14 @@ export default async function ReviewPage({ params }: { params: { slug: string } 
   if (!review) return null;
   return (
     <main className={styles.main}>
-      <h1>{review.title}</h1>
-      {review.date && <p>{new Date(review.date).toLocaleDateString()}</p>}
-      <article className={styles.prose} dangerouslySetInnerHTML={{ __html: review.contentHtml }} />
+      <h1 className={styles.title}>{review.title}</h1>
+      {review.date && (
+        <p className={styles.date}>{new Date(review.date).toLocaleDateString()}</p>
+      )}
+      <article
+        className={styles.prose}
+        dangerouslySetInnerHTML={{ __html: review.contentHtml }}
+      />
     </main>
   );
 }
-
-
