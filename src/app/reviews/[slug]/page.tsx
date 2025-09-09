@@ -17,6 +17,9 @@ export default async function ReviewPage({ params }: { params: { slug: string } 
       {review.date && (
         <p className={styles.date}>{new Date(review.date).toLocaleDateString()}</p>
       )}
+      {review.author && (
+        <p className={styles.author}>{review.author}</p>
+      )}
       <article
         className={styles.prose}
         dangerouslySetInnerHTML={{ __html: review.contentHtml }}
