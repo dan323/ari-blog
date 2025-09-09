@@ -15,7 +15,7 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.heroImage}>
-          <Image src="/_R9A7364-1.jpg" alt="Author" width={500} height={750} />
+          <Image src={`./${process.env.BASE_PATH||""}/_R9A7364-1.jpg`} alt="Author" width={500} height={750} />
         </div>
       </section>
     </main>
