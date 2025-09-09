@@ -8,6 +8,7 @@ export type ContentItem = {
   slug: string;
   title: string;
   date?: string;
+  category?: string;
   description?: string;
   contentHtml: string;
 };
@@ -41,6 +42,7 @@ export async function getContentBySlug(
     title: (data.title as string) || slug,
     date: data.date as string | undefined,
     description: data.description as string | undefined,
+    category: data.category as string | undefined,
     contentHtml,
   };
 }
