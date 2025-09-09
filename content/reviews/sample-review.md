@@ -1,7 +1,7 @@
 ---
 title: Soy un privilegiado
 date: 2025-09-08
-category: Book
+category: Libro
 description: Soy un privilegiado
 author: Daniel de la Concepción
 ---
