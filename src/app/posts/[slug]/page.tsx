@@ -1,5 +1,5 @@
 import { getAllContent, getContentBySlug } from "@/lib/markdown";
-import styles from "@/app/page.module.css";
+import styles from "./post.module.css";
 
 export const dynamicParams = false;
 
@@ -15,9 +15,7 @@ export default async function PostPage({ params }: { params: { slug: string } })
     <main className={styles.main}>
       <h1>{post.title}</h1>
       {post.date && <p>{new Date(post.date).toLocaleDateString()}</p>}
-      <article dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
+      <article className={styles.prose} dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
     </main>
   );
 }
-
-

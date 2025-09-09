@@ -26,16 +26,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <header style={{ padding: 16 }}>
-          <nav style={{ display: "flex", gap: 12 }}>
-            <Link href="/">Home</Link>
-            <Link href="/posts">Blog</Link>
-            <Link href="/reviews">Reviews</Link>
-            <Link href="/book">Book</Link>
-            <Link href="/music">Music</Link>
-          </nav>
+        <header className="site-header">
+          <div className="container" style={{ padding: 16 }}>
+            <nav style={{ display: "flex", gap: 16 }}>
+              <Link href="/">Inicio</Link>
+              <Link href="/posts">Blog</Link>
+              <Link href="/reviews">Reseñas</Link>
+              <Link href="/book">Mi libro</Link>
+              <Link href="/music">Mi música</Link>
+            </nav>
+          </div>
         </header>
-        {children}
+        <div className="container">
+          {children}
+        </div>
       </body>
     </html>
   );

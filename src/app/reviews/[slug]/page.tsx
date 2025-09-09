@@ -1,6 +1,6 @@
 
 import { getAllContent, getContentBySlug } from "@/lib/markdown";
-import styles from "@/app/page.module.css";
+import styles from "./review.module.css";
 
 export const dynamicParams = false;
 
@@ -16,7 +16,7 @@ export default async function ReviewPage({ params }: { params: { slug: string } 
     <main className={styles.main}>
       <h1>{review.title}</h1>
       {review.date && <p>{new Date(review.date).toLocaleDateString()}</p>}
-      <article dangerouslySetInnerHTML={{ __html: review.contentHtml }} />
+      <article className={styles.prose} dangerouslySetInnerHTML={{ __html: review.contentHtml }} />
     </main>
   );
 }
