@@ -33,7 +33,7 @@ export default function Home() {
           <p>Mi libro, mi música y mi proceso creativo.</p>
           <div className={styles.ctaRow}>
             <Link className={`${styles.btn} ${styles.btnPrimary}`} href="/posts">Lee mis pensamientos</Link>
-            <Link className={styles.btn} href="/music">Escucha mi vida</Link>
+            <Link className={`${styles.btn} ${styles.btnPrimary}`} href="/music">Escucha mi vida</Link>
           </div>
         </div>
         <div className={styles.heroImage}>
