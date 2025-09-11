@@ -13,7 +13,7 @@ export const metadata = {
     siteName: "Vicente Ariel Muñoz",
     images: [
       {
-        url: "/ari-blog/book-cover.jpg",
+        url: "/ari-blog/book.jpg",
         width: 600,
         height: 900,
         alt: "Portada del libro de Vicente Ariel Muñoz",
@@ -31,7 +31,7 @@ export default function BookPage() {
       {/* Portada */}
       <div className={styles.cover}>
         <Image
-          src={`../${process.env.BASE_PATH||""}/book.jpg`}
+          src={`../${process.env.BASE_PATH||""}book.jpg`}
           alt="Portada del libro"
           width={300}
           height={560}
