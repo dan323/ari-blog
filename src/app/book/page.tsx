@@ -31,10 +31,10 @@ export default function BookPage() {
       {/* Portada */}
       <div className={styles.cover}>
         <Image
-          src="/book-cover.jpg" // pon tu imagen en public/
+          src={`../${process.env.BASE_PATH||""}/book.jpg`}
           alt="Portada del libro"
           width={300}
-          height={450}
+          height={560}
         />
       </div>
 
