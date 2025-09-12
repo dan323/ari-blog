@@ -15,25 +15,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Vicente Ariel Muñoz – Escritor y Músico",
-  description: "Página oficial de Vicente Ariel Muñoz: descubre mi libro, mi música y mis proyectos creativos.",
-  keywords: ["Vicente Ariel Muñoz", "escritor", "músico", "libro", "Barcelona", "arte", "canciones"],
-  metadataBase: new URL("https://dan323.github.io/ari-blog/"),
+  metadataBase: new URL("https://dan323.github.io/ari-blog"), // cámbialo por tu dominio real
+  title: {
+    default: "Vicente Ariel Muñoz",
+    template: "%s | Vicente Ariel Muñoz",
+  },
+  description: "Escritor y músico. Reseñas, proyectos y más.",
   openGraph: {
-    title: "Vicente Ariel Muñoz – Escritor y Músico",
-    description: "Descubre mi libro, mi música y mis proyectos creativos.",
+    type: "website",
+    locale: "es_ES",
     url: "https://dan323.github.io/ari-blog",
     siteName: "Vicente Ariel Muñoz",
-    images: [
-      {
-        url: "/ari-blog/_R9A7364-1.jpg",
-        width: 800,
-        height: 600,
-        alt: "Foto de Vicente Ariel Muñoz",
-      },
-    ],
-    type: "website",
-  }
+  },
 };
 
 export default function RootLayout({
