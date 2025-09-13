@@ -86,3 +86,23 @@
   color: #e0e0e0; /* gris claro */
   line-height: 1.6;
 }
+
+.mailButton {
+  display: block;                 /* ocupa toda la línea */
+  margin: 3rem auto;              /* separación arriba/abajo y centrado */
+  text-align: center;
+  background-color: #1f2937;       /* gris oscuro */
+  color: #f9fafb;                 /* casi blanco */
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+}
+
+.mailButton:hover {
+  background-color: #374151;       /* gris más claro */
+  transform: translateY(-3px);
+}

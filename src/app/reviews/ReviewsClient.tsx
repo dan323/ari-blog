@@ -17,6 +17,12 @@ export default function ReviewsClient({ initialReviews }: { initialReviews: Cont
     <main className={styles.main}>
       <h1 className={styles.title}>Reseñas</h1>
 
+      <a
+  href="mailto:vicemunoz1996@gmail.com?subject=Reseña%20para%20Ariel&body=Escribe%20aquí%20tu%20reseña..."
+  className={styles.mailButton}
+>
+  Enviar reseña por email
+</a>
       <div className={styles.filters}>
         {["Todo", "Libro", "Música", "General"].map((f) => (
           <button
@@ -39,6 +45,7 @@ export default function ReviewsClient({ initialReviews }: { initialReviews: Cont
           </article>
         ))}
       </div>
+
     </main>
   );
 }

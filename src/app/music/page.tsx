@@ -10,14 +10,6 @@ export const metadata = {
     description: "Escucha mis canciones y mi último disco en Spotify.",
     url: "https://dan323.github.io/ari-blog/music",
     siteName: "Vicente Ariel Muñoz",
-    images: [
-      {
-        url: "/ari-blog/album-cover.jpg",
-        width: 800,
-        height: 800,
-        alt: "Portada del disco de Vicente Ariel Muñoz",
-      },
-    ],
     type: "music.album",
   },
 };
