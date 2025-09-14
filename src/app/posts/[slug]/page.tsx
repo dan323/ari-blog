@@ -12,7 +12,7 @@ export async function generateStaticParams() {
 }
 
 export default async function PostPage({ params }: { params: { slug: string } }) {
-  const post = await getContentBySlug("posts", (await params).slug);
+  const post = await getContentBySlug("posts", params.slug);
   if (!post) return null;
   const baseUrl = "https://dan323.github.io/ari-blog"; 
   const url = `${baseUrl}/posts/${params.slug}`;

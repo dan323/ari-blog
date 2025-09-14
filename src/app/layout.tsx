@@ -36,6 +36,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head><meta name="google-site-verification" content="PXPd0pASdiRabDbjMQU3yoqXC-PnXgYKXRN_rnk5H-Q" /></head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <header className="site-header">
           <div className="container" style={{ padding: 16 }}>
